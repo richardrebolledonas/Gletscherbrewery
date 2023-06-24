@@ -4,6 +4,18 @@
   }
 
   body{background-color: #fec526;}
+  h1{margin-bottom: 20px;font-family: 'Fasthand', cursive;
+    font-family: 'Freehand', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Special Elite', cursive;}
+  h2{font-family: 'Fasthand', cursive;
+    font-family: 'Freehand', cursive;
+    font-family: 'Satisfy', cursive;}
+  h3{font-family: 'Fasthand', cursive;
+    font-family: 'Freehand', cursive;
+    font-family: 'Satisfy', cursive;font-size: 22px;
+    margin-top: 15px;
+    color: rgb(34, 20, 1);}
 
   ul li{
     display: inline-block;
@@ -20,9 +32,13 @@
     nav {
             background-color: #03030324;
             padding:2px 0;}
-    footer {background-color: rgba(211, 211, 7, 0.511);}
-
+    footer {background-color: rgba(211, 211, 7, 0.511);
+   }
+    .footer1{display: inline-block;padding: 0 450px;
+    }
     .foto img{ width: 455px ;height: 480px ;}
+    .informacion2 img{width: 120px;height: 100px;
+    padding-left: 310px;}
 
     
 
