@@ -7,10 +7,12 @@
   h1{margin-bottom: 20px;font-family: 'Fasthand', cursive;
     font-family: 'Freehand', cursive;
     font-family: 'Satisfy', cursive;
-    font-family: 'Special Elite', cursive;}
+    font-family: 'Special Elite', cursive;
+    }
   h2{font-family: 'Fasthand', cursive;
     font-family: 'Freehand', cursive;
-    font-family: 'Satisfy', cursive;}
+    font-family: 'Satisfy', cursive;
+    font-family: 'Special Elite', cursive;}
   h3{font-family: 'Fasthand', cursive;
     font-family: 'Freehand', cursive;
     font-family: 'Satisfy', cursive;font-size: 22px;
@@ -51,6 +53,27 @@
 
 
             /*grids estructura*/
+
+          .contenedortotalOrigin{display: grid;
+            grid-template-columns: 1.25fr 0.5fr 1.25fr;
+            grid-template-rows:1fr 4.5fr 0.5fr
+             ;grid-template-areas:
+             "menu menu menu"
+             "info . info2"
+             "footer footer footer";
+             }
+             .menuOrigin{grid-area: menu ;}
+             .section1Origin{grid-area: info;
+              color: rgb(232, 230, 228);background-color: black;padding: 30px;}
+             .section2Origin{grid-area: info2; display: flex;
+              flex-direction: column;
+              justify-content: top;background-color: black;
+              color: rgb(232, 230, 228);padding: 30px
+              ;}
+             .footerOrigin{grid-area: footer;}
+             
+             
+
          .contenedortotal{display: grid;
         grid-template-columns: 1fr 2fr ;
         grid-template-rows:1fr 4.5fr 0.5fr
@@ -70,7 +93,7 @@
         }
         .informacion2 {
             grid-area: info ;
-            ;display: flex;
+            display: flex;
         flex-direction: column;
         justify-content: center;
         color: rgb(30, 29, 28);
