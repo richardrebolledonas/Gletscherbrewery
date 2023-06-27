@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> GLETSCHER BREWERY</title>
+
+     <!--css bootstrap-->
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+
      <!--css-->
     <link rel="stylesheet" href="../css/estilos.css">
 
@@ -19,7 +24,12 @@
 
 </head>
 <body>
-    <nav >
+    <!--clase para Bootstrap-->
+    <div class="container-fluid">
+
+    <header class="headerContact row">
+
+    <nav class="col-sm-12 col-md-12">
         <ul>
             <!--enlace relativo ok-->
             <li><a href="../index.html">History</a></li>
@@ -31,4 +41,54 @@
             </ul>
 
     </nav>
+    </header>
+    <main class="mainContact row">
+        <h2>Contact information</h2>
+
+        <!--bootstrap formulario-->
+        <div class="mb-3 col-sm-12 col-md-6">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+        
+        <div class="mb-3 col-sm-12 col-md-6">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3 col-sm-12 col-md-6">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" 
+            rows="3"></textarea>
+          </div>
+        <form class="botonContact col-sm-12 col-md-6">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+       
+
+          
+
+    </main>
+
+
+ <footer class="footerContact row">
+          <!--footer social medias-->
+          <div class="col-sm-12 col-md-6">
+     <a href="htpps://www.instagram.com "
+    target="_blank">enlace instagram</a>
+    <a href="htpps://www.facebook.com"
+    target="_blank">enlace facebook</a>
+    <a href="htpps://www.youtube.com "
+    target="_blank">enlace youtube</a>
+</div>
+</footer>
+
+    </div>
+
+<!--JS bootstrap-->
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>
     
