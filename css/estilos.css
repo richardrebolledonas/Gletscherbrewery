@@ -66,6 +66,16 @@ nav {
   padding: 2px 0;
 }
 
+.informacion2 img {
+  width: 120px;
+  height: 120px;
+  padding-left: 310px;
+}
+
+.mainContact {
+  background: linear-gradient(to left, #fec526, #b69640);
+}
+
 footer {
   background-color: rgba(211, 211, 7, 0.511);
 }
@@ -82,12 +92,6 @@ footer {
   grid-area: foto;
   display: flex;
   flex-direction: column;
-}
-
-.informacion2 img {
-  width: 120px;
-  height: 120px;
-  padding-left: 310px;
 }
 
 .footerOrigin {

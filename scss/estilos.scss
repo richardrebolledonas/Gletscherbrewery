@@ -24,7 +24,7 @@ body{background-color: #fec526;}
           font-family: 'Satisfy', cursive;
           font-family: 'Special Elite', cursive;
         margin-top: 23px;}
-        h6{padding: 0 45px
+    h6{padding: 0 45px
             ;}
            
     ul li{ 
@@ -41,6 +41,10 @@ body{background-color: #fec526;}
 nav {
         background-color: #03030324;
         padding:2px 0;}
+.informacion2 img{width: 120px;height: 120px;
+            padding-left: 310px;}
+.mainContact{background: linear-gradient(to left,#fec526,#b69640
+            );}
 footer {background-color: rgba(211, 211, 7, 0.511);
         }  
     .foto img{ width: 455px ;height: 480px ;}  
@@ -48,13 +52,14 @@ footer {background-color: rgba(211, 211, 7, 0.511);
     grid-area: foto;
     display: flex;
     flex-direction: column;}
-    .informacion2 img{width: 120px;height: 120px;
-        padding-left: 310px;}
+    
 .footerOrigin{display: inline-block ; padding: 0 620px;grid-area: footer;}
 .footerCulture{display: inline-block; padding: 0 620px;grid-area: footer;}
 .footer1{display: inline-block;padding: 0 620px; grid-area: footer; }
-.footerBeers{display: inline-block;padding: 0 620px; grid-area: footer; }
+.footerBeers{display: inline-block; padding: 0 620px; grid-area: footer; }
 .footerContact{display: inline-block;padding: 0 600px; grid-area: footer; }
+
+
 /*grid pagina Culture*/
 .contenedortotalCulture {display: grid;
         grid-template-columns:1fr 1fr 1fr;

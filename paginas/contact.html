@@ -8,10 +8,6 @@
      <!--css bootstrap-->
      <link rel="stylesheet" href="../css/bootstrap.min.css">
 
-
-     <!--css-->
-    <link rel="stylesheet" href="../css/estilos.css">
-
      <!--favicon-->
      <link rel="shortcut icon" href="../imagenes/glaciar logo favicon.jpg" type="image/x-icon">
     <!--google fonts-->
@@ -21,27 +17,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Freehand&family=Satisfy&family=Special+Elite&display=swap" rel="stylesheet">
+    
+      <!--css-->
+      <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 <body>
     <!--clase para Bootstrap-->
     <div class="container-fluid">
 
-    <header class="headerContact row">
-
-    <nav class="col-sm-12 col-md-12">
-        <ul>
-            <!--enlace relativo ok-->
-            <li><a href="../index.html">History</a></li>
-            <li><a href="origin.html">Origin</a></li>
-            <li><a href="culture.html">Culture</a> </li>
-            <li><a href="beers.html">Beers</a></li>
-            <li><a href="contact.html">Contact</a></li>
-           
-            </ul>
-
-    </nav>
-    </header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">History</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="origin.html">Origin</a>
+              <a class="nav-link" href="culture.html">Culture</a>
+              <a class="nav-link" href="beers.html">Beers</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+   
     <main class="mainContact row">
         <h2>Contact information</h2>
 
@@ -55,26 +56,18 @@
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
-          <div class="mb-3 col-sm-12 col-md-6">
+          <div class="mb-3 col-sm-12 col-md-12">
             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" 
             rows="3"></textarea>
           </div>
-        <form class="botonContact col-sm-12 col-md-6">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-
-       
-
-          
-
-    </main>
+        
+      </main>
 
 
- <footer class="footerContact row">
+ <footer class="footerContact row ">
           <!--footer social medias-->
-          <div class="col-sm-12 col-md-12" > 
+         <section class="col-xs-12 col-xs-12">
             <img src="../imagenes/logo dana.jpg" alt="">
             <img src ="../imagenes/insta2.png" alt="intagramlogo">
      
@@ -82,12 +75,13 @@
              
                     <h2>GLETSCHER BREWERY</h2>
                     <h6>copyright</h6>
+          </section>
               
-          </div>  
+          
   </footer>
 
 
-    </div>
+  </div>
 
 <!--JS bootstrap-->
 <script src="../js/bootstrap.min.js"></script>
