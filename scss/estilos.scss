@@ -1,8 +1,15 @@
-*{
+ /*variables Ofertas*/
+
+    $colorPrincipal:#fec526;
+    $colorSecundario:red;
+     
+
+
+*{ 
     margin: 0px;
     padding: 0px;
-  }
-body{background-color: #fec526;}
+ }
+body{background-color: $colorPrincipal;}
     h1{margin-bottom: 20px;font-family: 'Fasthand', cursive;
     font-family: 'Freehand', cursive;
     font-family: 'Satisfy', cursive;
@@ -24,7 +31,7 @@ body{background-color: #fec526;}
           font-family: 'Satisfy', cursive;
           font-family: 'Special Elite', cursive;
         margin-top: 23px;}
-    h6{padding: 0 45px
+    h6{margin-left: 570px
             ;}
            
     ul li{ 
@@ -45,19 +52,17 @@ nav {
             padding-left: 310px;}
 .mainContact{background: linear-gradient(to left,#fec526,#b69640
             );}
+            
 footer {background-color: rgba(211, 211, 7, 0.511);
         }  
     .foto img{ width: 455px ;height: 480px ;}  
-    .fotoCulture{width: 1275px ;height: 480px ;padding: 35px;
-    grid-area: foto;
-    display: flex;
-    flex-direction: column;}
     
-.footerOrigin{display: inline-block ; padding: 0 620px;grid-area: footer;}
-.footerCulture{display: inline-block; padding: 0 620px;grid-area: footer;}
-.footer1{display: inline-block;padding: 0 620px; grid-area: footer; }
-.footerBeers{display: inline-block; padding: 0 620px; grid-area: footer; }
-.footerContact{display: inline-block;padding: 0 600px; grid-area: footer; }
+    
+.footerOrigin {grid-area: footer;}
+.footerCulture{grid-area: footer;}
+.footer1 {grid-area: footer; }
+.footerBeers{ grid-area: footer; }
+.footerContact{ grid-area: footer; }
 
 
 /*grid pagina Culture*/
@@ -73,9 +78,23 @@ footer {background-color: rgba(211, 211, 7, 0.511);
          }
          .menuCulture{grid-area: menu ;}
          .infoCulture1{grid-area: info;
-            color: rgb(232, 230, 228);background-color: black;padding: 30px;}
-        .infoCulture2{grid-area: info2;
                 color: rgb(232, 230, 228);background-color: black;padding: 30px;}
+         .infoCulture2{grid-area: info2;
+                color: rgb(232, 230, 228);background-color: black;padding: 30px;}
+         .fotoCulture{width: 1275px ;height: 480px ;padding: 35px;
+                    grid-area: foto;
+                    display: flex;
+                    flex-direction: column; 
+                  
+                    transition: width 4s;
+                    
+                }
+         /*transicion foto no se como anidarlo en SAAS*/
+         .fotoCulture:hover{width: 1320px;}
+
+                
+                
+                
 
                    /*grid pagina Origin*/
     .contenedortotalOrigin{display: grid;
@@ -95,7 +114,7 @@ footer {background-color: rgba(211, 211, 7, 0.511);
                         color: rgb(232, 230, 228);padding: 30px
                         ;}
 
-                                  /*grid pagina History*/
+                /*grid pagina History/Index*/
 .contenedortotal{display: grid;
             grid-template-columns: 1fr 2fr ;
             grid-template-rows:1fr 4.5fr 0.5fr
@@ -107,21 +126,122 @@ footer {background-color: rgba(211, 211, 7, 0.511);
             }
         .menuprincipal {
                 grid-area: menu;
+                
             }
         .foto{
                 grid-area: foto ;
+               
     
                
             }
         .informacion2 {
                 grid-area: info ;
                 display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: rgb(30, 29, 28);
-            margin: 25px;
-            font-family: 'Gill Sans', 'Gill Sans MT'
+                flex-direction: column;
+                justify-content: center;
+                color: rgb(30, 29, 28);
+                margin: 25px;
+                font-family: 'Gill Sans', 'Gill Sans MT'
             , Calibri, 'Trebuchet MS', sans-serif;
+            
     
             }
+
+             /* Media Queries History/Index 
+             menu no funciona responsive*/
+
+             @media screen and (max-width: 768px){
+                .contenedortotal{
+                    grid-template-columns:1fr 1.5fr;
+                    grid-template-rows: 0.5fr 3fr 0.8fr;
+                    grid-template-areas: 
+                    "menu menu"
+                    "info info"
+                    "footer footer";
+                    
+                }
+                
+             }
+             @media screen and (max-width: 500px){
+                .contenedortotal{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 0.3fr 2fr 1fr 0.5fr;
+                    grid-template-areas: 
+                    "menu"
+                    "info"
+                    "foto"
+                    "footer";
+                }
+
+                
+             }
+             /* Media Queries Origin
+             menu no me funciona en responsive y
+              info 500px tampoco no se por que*/
+
+             @media screen and (max-width: 768px){
+                .contenedortotalOrigin{
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 0.5fr 2fr 0.8;
+                    grid-template-areas: 
+                    "menu menu"
+                    "info info2"
+                    "footer footer";
+                }
+
+
+
+             }
+
+             @media screen and (max-width:500px) {
+                .contenedortotalOrigin{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 0.3 0.7fr 1fr 0.8fr;
+                    grid-template-areas: 
+                    "menu"
+                    "info"
+                    "info2"
+                    "footer"
+                    ;
+                }
+                
+             }
+               /* Media Queries Culture
+             menu no me funciona en responsive*/
+            
+            @media screen and (max-width: 768px){
+                .contenedortotalCulture{
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 0.3fr 0.5fr 2fr 0.1fr 0.3fr;
+                    grid-template-areas: 
+                    "menu menu"
+                    "info info"
+                    "foto foto"
+                    "info2 info2"
+                    "footer footer";
+                }
+
+
+
+            }
+
+            @media screen and (max-width: 500px){
+                .contenedortotalCulture{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 0.1fr 0.2fr 0.7fr 0.1fr 0.3fr;
+                    grid-template-areas: 
+                    "menu"
+                    "info"
+                    "foto"
+                    "footer";
+
+                
+                
+                
+                }
+
+
+
+            }
+
            
