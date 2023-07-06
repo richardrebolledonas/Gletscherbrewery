@@ -2,6 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -77,6 +78,10 @@ nav {
   background: linear-gradient(to left, #fec526, #b69640);
 }
 
+.textoprincipiomain {
+  margin: 15px;
+}
+
 footer {
   background-color: rgba(211, 211, 7, 0.511);
 }
@@ -133,7 +138,7 @@ footer {
 }
 
 .fotoCulture {
-  width: 1275px;
+  width: 95%;
   height: 480px;
   padding: 35px;
   grid-area: foto;
@@ -144,7 +149,7 @@ footer {
 
 /*transicion foto no se como anidarlo en SAAS*/
 .fotoCulture:hover {
-  width: 1320px;
+  width: 97%;
 }
 
 /*grid pagina Origin*/
@@ -231,7 +236,7 @@ menu no me funciona en responsive y
 @media screen and (max-width: 500px) {
   .contenedortotalOrigin {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3 0.7fr 1fr 0.8fr;
+    grid-template-rows: 0.1 0.5fr 0.5fr 0.2fr;
     grid-template-areas: "menu" "info" "info2" "footer";
   }
 }
