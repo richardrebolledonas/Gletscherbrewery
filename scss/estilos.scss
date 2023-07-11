@@ -11,29 +11,29 @@
     box-sizing: border-box;
  }
 body{background-color: $colorPrincipal;}
+
     h1{ margin-bottom: 40px;
         margin-left: 90px;
         font-weight: lighter;
         font-size: xx-large;
         color: rgb(54, 43, 17);
-        font-family: 'Amatic SC', cursive;
-        font-family: 'Fasthand', cursive;
-        font-family: 'Freehand', cursive;
-        font-family: 'Frijole', cursive;
         font-family: 'Roboto Condensed', sans-serif;
         font-family: 'Satisfy', cursive;
         font-family: 'Special Elite', cursive;
         font-family: 'Vast Shadow', cursive;
-    }
+     }
+       
+ 
     h2{ font-family: 'Fasthand', cursive;
         font-family: 'Freehand', cursive;
         font-family: 'Satisfy', cursive;
         font-family: 'Special Elite', cursive;}
     h3{ font-family: 'Fasthand', cursive;
         font-family: 'Freehand', cursive;
-        font-family: 'Satisfy', cursive;font-size: 22px;
+        font-family: 'Satisfy', cursive;
+        font-size: 22px;
         margin-top: 15px;
-        color: rgb(34, 20, 1);}
+        color: rgb(17, 11, 4);}
     h4{ font-family: 'Amatic SC', cursive;
         font-family: 'Fasthand', cursive;
         font-family: 'Freehand', cursive;
@@ -67,15 +67,18 @@ nav {
         background-color: #03030324;
         padding:2px 0;}
 .informacion2 img{width: 100px;margin-left: 300px;}
-.mainContact{background: linear-gradient(to left,#fec526,#b69640
-            );}
+.mainContact{background: linear-gradient
+    (to left,#fec526,#b69640
+            );margin: 3px;}
 .textoprincipiomain{margin: 15px;}
-            
+.textoOriginsection1{display: inline;}
+.card-text{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.cardsection2{margin-left: 20px;}              
 footer {background-color: rgba(211, 211, 7, 0.511);
         }  
 .foto img{ width: 455px ;height: 480px ;}  
     
-    
+.fotoMedias{margin: 10px;}   
 .footerOrigin {grid-area: footer;}
 .footerCulture{grid-area: footer;}
 .footer1 {grid-area: footer; }
@@ -119,22 +122,36 @@ footer {background-color: rgba(211, 211, 7, 0.511);
                 
 
                    /*grid pagina Origin*/
-    .contenedortotalOrigin{display: grid;
-                grid-template-columns: 1.25fr 0.5fr 1.25fr;
+    .contenedortotalOrigin{
+                display: grid;
+                grid-template-columns: 0.8fr 1fr 0.8fr;
                 grid-template-rows: 0.3fr 4.5fr 0.5fr
                  ;grid-template-areas:
                  "menu menu menu"
-                 "info . info2"
+                 "info foto info2"
                  "footer footer footer";
                  }
-        .menuOrigin{grid-area: menu ;}
-        .section1Origin{grid-area: info;
-                    color: rgb(232, 230, 228);background-color: black;padding: 30px;}        
-        .section2Origin{grid-area: info2; display: flex;
-                        flex-direction: column;
-                        justify-content: top;background-color: black;
-                        color: rgb(232, 230, 228);padding: 30px
+        .menuOrigin{
+                    grid-area: menu ;}
+        .section1Origin{
+                    grid-area: info;
+                    color: rgb(235, 222, 210);
+                    background-color: black;
+                    padding: 30px;}        
+        .section2Origin{
+                    grid-area: info2; 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: top;
+                    background-color: black;
+                    color: rgb(232, 230, 228);
+                    padding: 30px
                         ;}
+        .sectionMedio{
+                grid-area: foto
+                ;overflow: hidden;
+                height: 730px;}
+                        
 
                 /*grid pagina History/Index*/
         .contenedortotal{
@@ -153,6 +170,7 @@ footer {background-color: rgba(211, 211, 7, 0.511);
             }
         .foto{
             grid-area: foto ;
+            margin: 20px;
                
     
                
@@ -163,7 +181,7 @@ footer {background-color: rgba(211, 211, 7, 0.511);
                 flex-direction: column;
                 justify-content: center;
                 color: rgb(30, 29, 28);
-                margin: 25px;
+                margin:8px;
                
                 font-family: 'Gill Sans', 'Gill Sans MT'
             , Calibri, 'Trebuchet MS', sans-serif;
@@ -177,7 +195,7 @@ footer {background-color: rgba(211, 211, 7, 0.511);
              @media screen and (max-width: 768px){
                 .contenedortotal{
                     grid-template-columns:1fr 1.5fr;
-                    grid-template-rows: 0.1fr 1.1fr 0.8fr;
+                    grid-template-rows: 0.1fr 0.8fr 0.8fr 0.2fr;
                     grid-template-areas: 
                     "menu menu"
                     "info info"
@@ -201,8 +219,7 @@ footer {background-color: rgba(211, 211, 7, 0.511);
                 
              }
              /* Media Queries Origin
-             menu no me funciona en responsive y
-              info 500px tampoco no se por que*/
+             */
 
              @media screen and (max-width: 768px){
                 .contenedortotalOrigin{
@@ -232,12 +249,12 @@ footer {background-color: rgba(211, 211, 7, 0.511);
                 
              }
                /* Media Queries Culture
-             menu no me funciona en responsive*/
+             */
             
             @media screen and (max-width: 768px){
                 .contenedortotalCulture{
                     grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 0.1fr 0.5fr 2fr 0.1fr 0.3fr;
+                    grid-template-rows: 0.1fr 0.5fr 1.5fr 0.1fr 0.3fr;
                     grid-template-areas: 
                     "menu menu"
                     "info info"
@@ -253,12 +270,13 @@ footer {background-color: rgba(211, 211, 7, 0.511);
             @media screen and (max-width: 500px){
                 .contenedortotalCulture{
                     grid-template-columns: 1fr;
-                    grid-template-rows: 0.1fr 0.2fr 0.7fr 0.1fr 0.3fr;
+                    grid-template-rows: 0.1fr 0.2fr 0.7fr 0.3fr;
                     grid-template-areas: 
                     "menu"
                     "info"
                     "foto"
                     "footer";
+                   
 
                 
                 
