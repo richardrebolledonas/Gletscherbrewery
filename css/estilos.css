@@ -82,8 +82,9 @@ nav {
   margin-left: 300px;
 }
 
+/*gradiente Contact*/
 .mainContact {
-  background: linear-gradient to left, #fec526, #b69640;
+  background: linear-gradient(to left, #fec526, #ceb880);
   margin: 3px;
 }
 
@@ -91,8 +92,8 @@ nav {
   margin: 15px;
 }
 
-.textoOriginsection1 {
-  display: inline;
+.textoCulture {
+  margin-top: 10px;
 }
 
 .card-text {
@@ -108,24 +109,11 @@ footer {
 }
 
 .foto img {
-  width: 455px;
-  height: 480px;
+  width: 90%;
 }
 
 .fotoMedias {
   margin: 10px;
-}
-
-.footerOrigin {
-  grid-area: footer;
-}
-
-.footerCulture {
-  grid-area: footer;
-}
-
-.footer1 {
-  grid-area: footer;
 }
 
 .footerBeers {
@@ -148,36 +136,40 @@ footer {
   grid-area: menu;
 }
 
-.infoCulture1 {
+.imagenesCulture1 {
   grid-area: info;
   margin-left: 7%;
 }
 
-.infoCulture1 img {
+.imagenesCulture1 img {
   width: 30%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.infoCulture2 {
+.imagenesCulture2 {
   grid-area: info2;
   margin-left: 7%;
 }
 
-.infoCulture2 img {
+.imagenesCulture2 img {
   width: 30%;
   margin-top: 5px;
 }
 
-.fotoCulture {
-  padding: 10px;
+.informacionCulture {
+  padding: 8px;
   grid-area: foto;
   display: flex;
   flex-direction: column;
   background-color: #f5bb1d;
 }
 
-/*.fotoCulture:hover{width: 97%;}*/
+.footerCulture {
+  grid-area: footer;
+}
+
+/*.informacionCulture:hover{width: 97%;}*/
 /*grid pagina Origin*/
 .contenedortotalOrigin {
   display: grid;
@@ -210,10 +202,14 @@ footer {
   height: 725px;
 }
 
+.footerOrigin {
+  grid-area: footer;
+}
+
 /*grid pagina History/Index*/
 .contenedortotal {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   grid-template-rows: 0.3fr 4.5fr 0.5fr;
   grid-template-areas: "menu menu menu" "foto info info" "footer footer footer";
 }
@@ -235,6 +231,10 @@ footer {
   color: rgb(30, 29, 28);
   margin: 8px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer1 {
+  grid-area: footer;
 }
 
 /* Media Queries History/Index 
@@ -281,7 +281,7 @@ footer {
 @media screen and (max-width: 500px) {
   .contenedortotalCulture {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.2fr 0.7fr 0.3fr;
+    grid-template-rows: 0.1fr 0.2fr 0.7fr 0.1fr;
     grid-template-areas: "menu" "info" "foto" "info2" "footer";
   }
 }
