@@ -140,7 +140,7 @@ footer {
 .contenedortotalCulture {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 3fr 0.2fr 0.2fr;
+  grid-template-rows: 0.2fr 1fr 0.7fr 1fr 0.2fr;
   grid-template-areas: "menu menu menu" "info info info" "foto foto foto" "info2 info2 info2" "footer footer footer";
 }
 
@@ -150,38 +150,38 @@ footer {
 
 .infoCulture1 {
   grid-area: info;
-  color: rgb(232, 230, 228);
-  background-color: black;
-  padding: 30px;
+  margin-left: 7%;
+}
+
+.infoCulture1 img {
+  width: 30%;
+  margin-top: 5px;
 }
 
 .infoCulture2 {
   grid-area: info2;
-  color: rgb(232, 230, 228);
-  background-color: black;
-  padding: 30px;
+  margin-left: 7%;
+}
+
+.infoCulture2 img {
+  width: 30%;
+  margin-top: 5px;
 }
 
 .fotoCulture {
-  width: 95%;
-  height: 480px;
-  padding: 35px;
+  padding: 10px;
   grid-area: foto;
   display: flex;
   flex-direction: column;
-  transition: width 4s;
+  background-color: #f5bb1d;
 }
 
-/*transicion foto no se como anidarlo en SAAS*/
-.fotoCulture:hover {
-  width: 97%;
-}
-
+/*.fotoCulture:hover{width: 97%;}*/
 /*grid pagina Origin*/
 .contenedortotalOrigin {
   display: grid;
   grid-template-columns: 0.8fr 1fr 0.8fr;
-  grid-template-rows: 0.3fr 4.5fr 0.5fr;
+  grid-template-rows: 0.3fr 3fr 0.5fr;
   grid-template-areas: "menu menu menu" "info foto info2" "footer footer footer";
 }
 
@@ -198,18 +198,15 @@ footer {
 
 .section2Origin {
   grid-area: info2;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
   background-color: black;
-  color: rgb(232, 230, 228);
+  color: rgb(235, 222, 210);
   padding: 30px;
 }
 
 .sectionMedio {
   grid-area: foto;
   overflow: hidden;
-  height: 730px;
+  height: 725px;
 }
 
 /*grid pagina History/Index*/
@@ -224,7 +221,7 @@ footer {
   grid-area: menu;
 }
 
-.foto {
+.foto img {
   grid-area: foto;
   margin: 20px;
 }
@@ -260,15 +257,15 @@ footer {
 @media screen and (max-width: 768px) {
   .contenedortotalOrigin {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 2fr 0.8;
-    grid-template-areas: "menu menu" "info info2" "footer footer";
+    grid-template-rows: 0.1fr 1fr 0.3fr 0.1fr;
+    grid-template-areas: "menu menu" "info info2" "foto foto" "footer footer";
   }
 }
 @media screen and (max-width: 500px) {
   .contenedortotalOrigin {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.2fr;
-    grid-template-areas: "menu" "info" "info2" "footer";
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr 0.1fr;
+    grid-template-areas: "menu" "info" "info2" "foto" "footer";
   }
 }
 /* Media Queries Culture
@@ -276,7 +273,7 @@ footer {
 @media screen and (max-width: 768px) {
   .contenedortotalCulture {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.5fr 1.5fr 0.1fr 0.3fr;
+    grid-template-rows: 0.1fr 0.5fr 1.5fr 0.1fr 0.1fr;
     grid-template-areas: "menu menu" "info info" "foto foto" "info2 info2" "footer footer";
   }
 }
@@ -284,7 +281,7 @@ footer {
   .contenedortotalCulture {
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.2fr 0.7fr 0.3fr;
-    grid-template-areas: "menu" "info" "foto" "footer";
+    grid-template-areas: "menu" "info" "foto" "info2" "footer";
   }
 }
 
