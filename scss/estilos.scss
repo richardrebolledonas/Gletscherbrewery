@@ -1,8 +1,7 @@
- /*variables Ofertas*/
+ /*variables */
 
-    $colorPrincipal:#fec526;
-    $colorSecundario:red;
-     
+$colorPrincipal:#fec526;
+$fuenteGrande: 31px;
 
 
 *{ 
@@ -13,36 +12,37 @@
 body{background-color: $colorPrincipal;}
 
     h1{ margin-bottom: 40px;
-        margin-left: 90px;
+        margin-left: 100px;
         font-weight: lighter;
-        font-size: xx-large;
+        font-size: $fuenteGrande;
         color: rgb(54, 43, 17);
         font-family: 'Roboto Condensed', sans-serif;
         font-family: 'Satisfy', cursive;
         font-family: 'Special Elite', cursive;
         font-family: 'Vast Shadow', cursive;
-     }
+    }
        
  
     h2{ font-family: 'Fasthand', cursive;
         font-family: 'Freehand', cursive;
         font-family: 'Satisfy', cursive;
-        font-family: 'Special Elite', cursive;}
+        font-family: 'Special Elite', cursive;
+    }
     h3{ font-family: 'Fasthand', cursive;
         font-family: 'Freehand', cursive;
         font-family: 'Satisfy', cursive;
         font-size: 22px;
         margin-top: 15px;
-        color: rgb(17, 11, 4);}
-    h4{ font-family: 'Amatic SC', cursive;
-        font-family: 'Fasthand', cursive;
+        color: rgb(17, 11, 4);
+    }
+    h4{ 
         font-family: 'Freehand', cursive;
         font-family: 'Roboto Condensed', sans-serif;
         font-family: 'Satisfy', cursive;
         font-family: 'Special Elite', cursive;
-        margin-top: 23px;}
-    h6{ margin-left: 570px
-            ;}
+        margin-top: 23px;
+    }
+   
     
                 
     .logo img{ margin-right: 40px;
@@ -59,6 +59,8 @@ body{background-color: $colorPrincipal;}
             margin-top: 40px;
             margin-bottom: 40px;
             padding: 0 90px;}
+
+
     a {text-decoration:none;
     color: rgb(241, 235, 235);}
     
@@ -67,28 +69,38 @@ nav {
         background-color: #03030324;
         padding:2px 0;}
 
-.informacion2 img{width: 100px;margin-left: 300px;}
+    .informacion2 img{width: 100px;margin-left: 300px;}
 
   /*gradiente Contact*/
-.mainContact{
+    .mainContact{
     background: linear-gradient(to left,#fec526,#ceb880 );margin: 3px;}
 
-.textoprincipiomain{margin: 15px;}
-.textoCulture{margin-top: 10px;}
+    .textoprincipiomain{margin: 15px;}
+    .textoCulture{margin-top: 10px;}
 
-.card-text{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
-.cardsection2{margin-left: 20px;}  
+    .card-text{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    .cardsection2{margin-left: 20px;}  
 
-footer {background-color: rgba(211, 211, 7, 0.511);
+    footer {background-color: rgba(211, 211, 7, 0.511);
         }  
-.foto img{ width: 90%;}  
+    .foto img{ width: 90%;}  
     
-.fotoMedias{margin: 10px;}   
+    .fotoMedias{margin: 10px;}   
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(7, 1, 1);
+       
+        
+    }
 
+ /*Footer restantes con Grid*/
 
-
-.footerBeers{ grid-area: footer; }
-.footerContact{ grid-area: footer; }
+    .footerBeers{ grid-area: footer; }
+    .footerContact{ grid-area: footer; }
 
 
 /*grid pagina Culture*/
@@ -144,7 +156,7 @@ footer {background-color: rgba(211, 211, 7, 0.511);
                 
 
                    /*grid pagina Origin*/
-    .contenedortotalOrigin{
+        .contenedortotalOrigin{
                 display: grid;
                 grid-template-columns: 0.8fr 1fr 0.8fr;
                 grid-template-rows: 0.3fr 3fr 0.5fr
@@ -210,7 +222,7 @@ footer {background-color: rgba(211, 211, 7, 0.511);
             
     
             }
-            .footer1 {grid-area: footer; }
+        .footer1 {grid-area: footer; }
 
              /* Media Queries History/Index 
              */
